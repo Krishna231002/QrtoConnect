@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/createBroadCast"
+        android:title="Create Broadcast"
+        android:textColor="@android:color/black" />
+
+    <item
+        android:id="@+id/RequestActivity"
+        android:title="Requests"
+        android:textColor="@android:color/black"/>
+
+    <item
+        android:id="@+id/ProfilefromBroadcast"
+        android:title="Profile"
+        android:textColor="@android:color/black"/>
+
+    <item android:id="@+id/broadcastsearchbar"
+        android:title="search"
+        android:icon="@drawable/baseline_search_24"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:textColor="@android:color/black"/>
+
+    <item
+        android:id="@+id/community_button"
+        android:title="Community"
+        app:showAsAction="always"
+        app:actionLayout="@layout/custom_toolbar_community_item"
+        android:textColor="@android:color/black"/>
+
+</menu>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue_1">#2B9EFA</color>
+    <color name="blue_3">#E5F3FE</color>
+    <color name="blue_2">#07497E</color>
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#e3e2e7</color>
+
+
+    <color name="color_main_background_01">#1a1b1f</color>
+    <color name="color_search_btn_view_02">#292d36</color>
+    <color name="color_btn_call_message_video_email">#3e4659</color>
+    <color name="color_add_btn">#284678</color>
+    <color name="color_save_btn">#aac7ff</color>
+    <color name="color_container">#252932</color>
+    <color name="colorTextPrimary">#5c7470</color>
+    <color name="colorTextSecondary">#8da0a4</color>
+    <color name="color_text">#e3e2e7</color>
+    <color name="color_icon">#c4c7d0</color>
+    <color name="color_selected_icon">#DBDEE7</color>
+
+    <color name="selectedIconColor">#04E1F8</color>
+    <color name="defaultIconColor">#F6F6F6</color>
+    <color name="countTextColor">#fff</color>
+    <color name="countBackgroundColor">#F45E0B</color>
+    <color name="circleColor">#fff</color>
+    <color name="backgroundBottomColor">#04E1F8</color>
+    <color name="shadowColor">#2E2E2E</color>
+
+    <color name="colorPrimary">#0b6156</color>
+    <color name="colorPrimaryDark">#095049</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="lightGrey">#EDEDED</color>
+    <color name="whatsAppColor">#0b6156</color>
+    <color name="red" >#9F0B0B</color>
+    <color name="status_background" >#009688</color>
+    <color name="chat_background">#8BC34A</color>
+    <color name="fb_color">#3c5793</color>
+    <color name="lightgreen">#e5ffcc</color>
+    <color name="settingsIconColor">#0E8374</color>
+    <color name="grayBackground">#BCBCBC</color>
+    <color name="chatbackground">#AAAAAA</color>
+
+
+    <color name="colorAccent1">#FFCEA3</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="edittextColor">#DDDDDD</color>
+    <color name="grey">#AAAAAA</color>
+    <color name="btn_red">#EF3030</color>
+    <color name="btn_green">#39B13F</color>
+
+    <color name="blue00">#134074</color>
+    <color name="blue001">#13315C</color>
+    <color name="blue002">#0B2545</color>
+    <color name="blue003">#8DA9C4</color>
+    <color name="blue004">#EEF4ED</color>
+</resources>

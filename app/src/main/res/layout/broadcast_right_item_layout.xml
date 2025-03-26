@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+        <import type="android.view.View"/>
+        <variable
+            name="broadcastMessage"
+            type="com.example.demo8.BroadChannelMessageModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_sender"
+            android:orientation="vertical"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/brSendguideline"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:id="@+id/broadcastSendImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="250dp"
+                android:maxHeight="500dp"
+                android:adjustViewBounds="true"
+                android:paddingStart="3dp"
+                android:paddingEnd="11dp"
+                android:scaleType="fitCenter"
+                android:visibility="gone"
+
+                />
+
+            <!--imageChat="@{groupMessage.message}"
+            android:visibility="@{groupMessage.type.equals(`text`)?View.GONE:View.VISIBLE}"-->
+
+
+            <TextView
+                android:id="@+id/txtBroadcastSenderMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="message"
+                android:textColorHint="@color/white"
+                android:maxWidth="250dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="15dp"
+                android:singleLine="false"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/txtBroadcastsenderTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:paddingEnd="10dp"
+                android:text="12:45 pm"
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_gravity="end"
+                app:layout_constraintTop_toBottomOf="@id/txtBroadcastSenderMessage" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/brSendguideline"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="0.8dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

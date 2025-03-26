@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "74827632097",
+    "firebase_url": "https://qrtocontact1-default-rtdb.firebaseio.com",
+    "project_id": "qrtocontact1",
+    "storage_bucket": "qrtocontact1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74827632097:android:b95d35e9a00354368f96a0",
+        "android_client_info": {
+          "package_name": "com.example.demo8"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "74827632097-49kqjeiisigsjbtf9on1prm370mmbker.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.demo8",
+            "certificate_hash": "fb396b2f52a55fe67938af366eaf3b1e6774275f"
+          }
+        },
+        {
+          "client_id": "74827632097-vf50mj6dce2e9dbb1l15351nqc5ilk92.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhgE2-gpnQKhY-43VDV-5kgxU_j5LFG_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "74827632097-vf50mj6dce2e9dbb1l15351nqc5ilk92.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

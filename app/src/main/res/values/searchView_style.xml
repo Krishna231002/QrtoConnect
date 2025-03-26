@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SearchViewTextColor" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <!-- You can also set other properties here -->
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/req_layout"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/req_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:src="@drawable/avatar3"
+            android:layout_alignParentStart="true"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/req_image"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/req_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:text="@string/contact_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+
+            <TextView
+                android:id="@+id/req_Channel_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:text="channel name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnAccept"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toStartOf="@id/btnCancel"
+            android:backgroundTint="@color/blue_1"
+            android:gravity="center_vertical"
+            android:scaleType="fitCenter"
+            android:src="@drawable/accept_icon"/>
+
+        <ImageButton
+            android:id="@+id/btnCancel"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/baseline_cancel_24"
+            android:backgroundTint="@color/blue_2"
+            android:scaleType="fitCenter"
+            android:layout_marginEnd="@dimen/_15sdp" />
+    </RelativeLayout>
+</LinearLayout>

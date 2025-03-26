@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/groupChatfromContact"
+        android:title="Create Group"/>
+
+    <item android:id="@+id/broadcastfromContact"
+        android:title="Create Broadcast"/>
+
+
+    <item
+        android:id="@+id/ProfilefromContact"
+        android:title="Profile"/>
+
+    <item android:id="@+id/contactsearchbar"
+        android:title="search"
+        android:icon="@drawable/baseline_search_24"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView"/>
+
+  <item
+    android:id="@+id/contactNotification"
+    android:title="Notification"
+    app:showAsAction="always"
+    app:actionLayout="@layout/custom_toolbar_item"
+    />
+</menu>

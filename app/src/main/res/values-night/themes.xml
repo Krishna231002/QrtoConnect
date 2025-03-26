@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Demo8" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue002</item>
+        <item name="colorPrimaryDark">@color/blue002</item>
+        <item name="colorAccent">@color/blue002</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="SearchViewDarkStyle" parent="Widget.AppCompat.SearchView">
+        <!-- Set text color -->
+        <item name="android:textColor">@color/white</item>
+        <!-- You can also set other properties here -->
+    </style>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Demo8" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+
+</resources>

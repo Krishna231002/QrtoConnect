@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <corners android:radius="@dimen/_20sdp">
+            </corners>
+            <stroke android:width="@dimen/_2sdp"
+                android:color="@color/color_text"/>
+            <solid android:color="@color/grey"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/camera_1"
+        android:gravity="center"
+        android:width="30dp"
+        android:height="30dp"
+        />
+</layer-list>

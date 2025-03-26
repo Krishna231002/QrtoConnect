@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:dragEdge="right"
+    app:mode="same_level"
+    android:background="@color/white"
+    android:layout_marginTop="2dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/contact_item_edit"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/blue_1"
+            android:gravity="center"
+            android:paddingTop="@dimen/_10sdp"
+            android:text="Edit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            app:drawableTopCompat="@drawable/baseline_edit_24"
+            />
+
+        <TextView
+            android:id="@+id/contact_item_delete"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="Delete"
+            android:textSize="@dimen/_16sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@color/blue_2"
+            android:textColor="@color/white"
+            app:drawableTopCompat="@drawable/baseline_delete_24"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/contact_item_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:src="@drawable/avatar3"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/contact_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:singleLine="true"
+            android:maxWidth="170dp"
+            android:layout_toEndOf="@id/contact_item_image"
+            android:layout_toStartOf="@id/contact_item_call"
+            android:text="@string/contact_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+
+        <ImageButton
+            android:id="@+id/contact_item_call"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="fitCenter"
+            android:src="@drawable/custom_contact_detail_arrow_bg"
+            android:contentDescription="@string/call_button_description"
+            />
+    </RelativeLayout>
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

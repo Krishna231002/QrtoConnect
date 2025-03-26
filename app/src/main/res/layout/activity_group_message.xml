@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatDetailActivity"
+    android:background="@drawable/w2">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/GroupBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/blue_2"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/grBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.476"
+                app:srcCompat="@drawable/arrow_1" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/group_profile_image"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+
+                android:padding="5dp"
+                android:src="@drawable/avatar3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/grBack"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/groupName"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="Group Name..................."
+                android:singleLine="true"
+                android:maxWidth="180dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/group_profile_image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.zegocloud.uikit.prebuilt.call.invite.widget.ZegoSendCallInvitationButton
+                android:id="@+id/btn_group_audio_call"
+                android:layout_width="29dp"
+                android:layout_height="26dp"
+                android:padding="@dimen/_10sdp"
+                android:scaleType="fitCenter"
+                android:layout_marginEnd="8dp"
+                android:paddingStart="1dp"
+                android:paddingEnd="1dp"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btn_group_video_call"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/phone_108"/>
+
+
+
+            <com.zegocloud.uikit.prebuilt.call.invite.widget.ZegoSendCallInvitationButton
+                android:id="@+id/btn_group_video_call"
+                android:layout_width="30dp"
+                android:layout_gravity="center"
+                android:layout_height="28dp"
+                android:layout_marginEnd="10dp"
+                android:paddingStart="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/menuImageView"
+                app:layout_constraintTop_toTopOf="parent"
+                android:padding="@dimen/_8sdp"
+                android:scaleType="centerInside"
+                android:visibility="invisible"
+                android:background="@drawable/video_call_10"/>
+
+
+            <ImageView
+                android:id="@+id/menuImageView"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/menu_10" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/groupMessageActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GroupBar"
+        android:layout_above="@id/messageLayout"
+        android:layout_marginBottom="3dp"
+        android:isScrollContainer="true"
+        android:nestedScrollingEnabled="true"/>
+
+
+    <LinearLayout
+        android:id="@+id/messageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_et_message">
+
+            <ImageView
+                android:id="@+id/btnGroupDataSend"
+                android:layout_width="29dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="2dp"
+                android:src="@drawable/camera_10" />
+
+            <EditText
+                android:id="@+id/edtGroupMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/btnGroupDataSend"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:background="@null"
+                android:hint="Enter your message"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="10dp"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/btnGroupSend"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_et_message"
+            android:paddingEnd="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="15dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:src="@drawable/send_10" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+
+        <variable
+            name="groupModel"
+            type="com.example.demo8.GroupModels" />
+
+        <import type="com.example.demo8.GroupModels" />
+        <import type="android.graphics.drawable.Drawable" />
+
+
+    </data>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+    tools:ignore="MissingDefaultResource"
+    android:id="@+id/layout_group"
+    android:background="@color/white"
+    android:layout_marginTop="2dp">
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/gr_profile_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:src="@drawable/avatar3"
+            android:layout_alignParentStart="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/grunreadBadge"
+            android:layout_toEndOf="@+id/gr_profile_image"
+            android:orientation="vertical"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                android:id="@+id/groupNameList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:text="@string/contact_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp"/>
+
+
+            <TextView
+                android:id="@+id/grlastMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:text="@{groupModel.lastMessageModel!=null?groupModel.lastMessageModel.message:``,default=`Last Message`}"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/grunreadBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/custom_bg_search_view"
+            android:text="10"
+            android:padding="@dimen/_3sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_8sdp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
+</layout>

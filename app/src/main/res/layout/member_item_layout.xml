@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+    <data>
+        
+        <variable
+            name="users"
+            type="com.example.demo8.Users" />
+        <import type="android.view.View" />
+    </data>
+    
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:background="@color/white">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgMember"
+        imageUrl="@{users.imageURL}"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:src="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/txtMemberName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/imgMember"
+        android:text="@{users.fullname,default=`Name`}"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtMemberStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMemberName"
+        android:layout_alignStart="@+id/txtMemberName"
+        android:text="@{users.status,default=`Status`}"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/memberDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:text="Group Admin"
+        android:background="@color/blue_3"
+        android:textColor="@color/blue_2"
+        android:padding="2dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:visibility="@{users.typing.equals(`Admin`)?View.VISIBLE:View.GONE}" />
+
+
+</RelativeLayout>
+
+</layout>
